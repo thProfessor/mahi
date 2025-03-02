@@ -7,7 +7,7 @@ import couple from './assets/couple.json'
 import heart from './assets/heart.json'
 import { motion } from "framer-motion";
 import audioFile from './song.mp3'
-import tripti from './assets/tripti.jpg'
+import mahima from './assets/mahima.jpg'
 
 function App() {
   const [asked, setAsked] = useState(false);
@@ -36,12 +36,12 @@ function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Hi Tripti!
+        Hi Mahima!
       </motion.h1>
 
       <Lottie animationData={heart} style={{ width: "100px", margin: "auto"}} />
       </motion.div>
-    <motion.img src={tripti} initial={{ opacity: 0, y: -20 }}
+    <motion.img src={mahima} initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         style={{height:"200px", border:"solid #e56b6b 2px"}} />
@@ -52,7 +52,7 @@ function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Will You Go on a Date With Me?
+        Will You Go for Coffee With Me?
       </motion.h1>
       <div style={{ width: "300px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", borderRadius: "12px", textAlign: "center", padding: "20px", backgroundColor: "#e56b6b" }}>
         {!asked ? (
